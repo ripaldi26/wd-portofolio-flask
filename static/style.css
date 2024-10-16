@@ -1,0 +1,432 @@
+body,
+.navbar,
+.jumbotron,
+.container {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+}
+
+
+.navbar {
+    background-color: black !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    /* margin: 0px 100px 0px 70px; */
+}
+
+.nav-link,
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: all 0.6s ease;
+    /* Ubah durasi transisi menjadi 0.6 detik */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+.about{
+    margin-top: 10%;
+}
+
+.imgAbout {
+    box-shadow: 15px -7px 36px -5px rgba(100, 255, 218, 1);
+    background-color:rgba(255, 255, 255, 0.1) ;
+    border-radius: 50px;
+}
+.imgAbout img {
+    border-radius: 50px;
+}
+.cv {
+    padding: 1.3em 3em;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width: 175px;
+    height: 50px;
+}
+
+.cv:hover {
+    background-color: rgba(100, 255, 218, 1);;
+    box-shadow: 0px 15px 20px rgba(100, 255, 218, 1);;
+    color: black;
+    transform: translateY(-7px);
+}
+
+.cv:active {
+    transform: translateY(-1px);
+}
+
+.textPorto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    height: 265px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    margin-bottom: 30px;
+    z-index: 99;
+}
+
+.project svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.project:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.project:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.project:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Hover*/
+.project:hover {
+    border-color: rgba(100, 255, 218, 1);;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.project:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.work{
+    margin-top: 10%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.form-heading {
+    text-align: center;
+    margin: 2em;
+    color: white;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+}
+
+
+.bton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    outline: 1px solid white;
+    transition: all ease-in-out 0.3s;
+    margin-top: 2%;
+}
+
+.sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+    background-image: linear-gradient(163deg, black 0%, black 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+    margin-top: 10%;
+    min-width: 60%;
+}
+
+.form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+.footer{
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* margin-top: 5%; */
+    /* margin:-% 7.5% 0 7.5%; */
+    /* z-index: 999; */
+}
+.social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+}
+
+.social-login-icons svg {
+    width: 40px;
+}
+
+.social-icon-1,
+.social-icon-1-1,
+.social-icon-2,
+.social-icon-2-2,
+.social-icon-3,
+.social-icon-3-3,
+.social-icon-4,
+.social-icon-4-4 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 20px 0 0px 0;
+}
+
+.icon svg {
+    fill: black;
+}
+
+.socialcontainer {
+    height: 80px;
+    overflow: hidden;
+}
+
+.social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+}
+
+.social-icon-1 svg,
+.social-icon-2 svg,
+.social-icon-3 svg,
+.social-icon-4 svg {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.socialcontainer:hover .social-icon-1 {
+    transform: translateY(-70px);
+}
+
+.socialcontainer:hover .social-icon-1 svg,
+.socialcontainer:hover .social-icon-2 svg,
+.socialcontainer:hover .social-icon-3 svg,
+.socialcontainer:hover .social-icon-4 svg {
+    opacity: 1;
+}
+
+.social-icon-2 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: linear-gradient(72.44deg,
+            #ff7a00 11.92%,
+            #ff0169 51.56%,
+            #d300c5 85.69%);
+}
+
+.socialcontainer:hover .social-icon-2 {
+    transform: translateY(-70px);
+}
+
+.social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #316ff6;
+}
+
+.socialcontainer:hover .social-icon-3 {
+    transform: translateY(-70px);
+}
+
+.social-icon-4 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+
+    background: linear-gradient(180deg,
+            rgba(129, 34, 144, 1) 0%,
+            rgba(77, 34, 124, 1) 91%);
+}
+
+.socialcontainer:hover .social-icon-4 {
+    transform: translateY(-70px);
+}
+
+
+@media (max-width: 990px) {
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    .home > .textPorto{
+        margin-bottom:10%;
+    }
+
+    .textPorto {
+        text-align: center;
+    }
+
+    .imgAbout {
+        margin-bottom: 10%;
+    }
+
+    .sendMessage-btn{
+        margin-top: 15%;
+    }
+    .form-card1{
+        max-width: 100% ;
+    }
+        /* .jumbotron,
+    .container {
+        padding: 1em;
+        margin: 0;
+    } */
+}
+
+
